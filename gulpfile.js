@@ -6,12 +6,6 @@ var replace = require('gulp-replace');
 var cssmin = require('gulp-cssmin');
 var clean = require('gulp-clean');
 
-var paths = {
-  sass: ['./**/sass/*.scss', '!./bower_components/**/*.scss'],
-  babel: ['./**/babel/*.js', '!./bower_components/**/*.js'],
-  html: ['./**/src/html/*.html', '!./bower_components/**/*.html'],
-  build: './**/_build',
-}
 
 gulp.task('default', ['injectjs'] ,function() {
   gulp.start('clean');
@@ -21,8 +15,8 @@ gulp.task('css', function () {
   return gulp.src('rawr.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-			browsers: ['last 2 versions', '> 5%'],
-		}))
+      browsers: ['last 2 versions', '> 5%']
+    }))
     .pipe(cssmin())
     .pipe(gulp.dest(''));
 });
