@@ -10,3 +10,8 @@ To get raptors on your page, include rawr.js and rawr.css in your html.
 You will also need raptor.png, rawr.mp3, and rawr.ogg.
 
 In case you want to be sneaky, you can also just include inline/rawr.js, which has all above listed files inlined in its source code.
+
+## How do I get raptors on the screen?
+Easy, press &ShortUpArrow; &ShortUpArrow; &darr; &darr; &larr; &rarr; &larr; &rarr; B A, and behold.
+
+You can also call a raptor by executing `makeRaptor();`;
