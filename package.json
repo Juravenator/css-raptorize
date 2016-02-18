@@ -1,0 +1,27 @@
+{
+  "name": "css-raptorize",
+  "version": "1.0.0",
+  "description": "Inspired from the original jQuery Raptorize plugin by ZURB. This version however does not use jQuery, but fancy css3 animations.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juravenator/css-raptorize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juravenator/css-raptorize/issues"
+  },
+  "homepage": "https://github.com/Juravenator/css-raptorize#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.2.0"
+  }
+}
