@@ -160,7 +160,7 @@ window.addEventListener('load', function() {
   // at page load we briefly add a hidden raptor to the DOM
   // to pre-load the image and sound files
   makeRaptor(false);
-  var css = "#rawr{width:400px;height:600px;position:absolute;bottom:-600px;right:-400px;display:none;z-index:-1}#rawr[animate]{display:block;z-index:999999;-webkit-animation:show .4s cubic-bezier(.54,.72,.92,1.78) 0s 1,strike 2.6s cubic-bezier(.4,0,1,1) .4s 1;animation:show .4s cubic-bezier(.54,.72,.92,1.78) 0s 1,strike 2.6s cubic-bezier(.4,0,1,1) .4s 1}@-webkit-keyframes show{0%{bottom:-600px;right:100px}100%{bottom:-130px;right:100px}}@keyframes show{0%{bottom:-600px;right:100px}100%{bottom:-130px;right:100px}}@-webkit-keyframes strike{0%,13%{bottom:-130px;right:100px}100%{bottom:-130px;right:100%}}@keyframes strike{0%,13%{bottom:-130px;right:100px}100%{bottom:-130px;right:100%}}";
+  var css = "#rawr{width:400px;height:600px;position:fixed;bottom:-600px;right:-400px;display:none;z-index:-1}#rawr[animate]{display:block;z-index:999999;-webkit-animation:show .4s cubic-bezier(.54,.72,.92,1.78) 0s 1,strike 2.6s cubic-bezier(.4,0,1,1) .4s 1;animation:show .4s cubic-bezier(.54,.72,.92,1.78) 0s 1,strike 2.6s cubic-bezier(.4,0,1,1) .4s 1}@-webkit-keyframes show{0%{bottom:-600px;right:100px}100%{bottom:-130px;right:100px}}@keyframes show{0%{bottom:-600px;right:100px}100%{bottom:-130px;right:100px}}@-webkit-keyframes strike{0%,13%{bottom:-130px;right:100px}100%{bottom:-130px;right:100%}}@keyframes strike{0%,13%{bottom:-130px;right:100px}100%{bottom:-130px;right:100%}}";
 var head = document.head || document.getElementsByTagName('head')[0];
 var style = document.createElement('style');
 style.type = 'text/css';
