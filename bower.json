@@ -1,0 +1,17 @@
+{
+  "name": "css-raptorize",
+  "description": "Inspired from the original jQuery Raptorize plugin by ZURB. This version however does not use jQuery, but fancy css3 animations.",
+  "main": "rawr.js",
+  "authors": [
+    "Glenn Dirkx <glenn.dirkx@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Juravenator/css-raptorize",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
