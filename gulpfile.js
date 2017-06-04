@@ -29,9 +29,9 @@ gulp.task('injectcss',['css'] ,function () {
 gulp.task('injectjs',['injectcss'] ,function () {
   return gulp.src('rawr.js')
     .pipe(replace('//inline css here', fs.readFileSync('inline/inlinecss.js', 'utf8')))
-    .pipe(replace('media/raptor.png', "data:image/png;base64," + new Buffer(fs.readFileSync('media/raptor.png')).toString('base64') ) )
-    .pipe(replace('media/rawr.mp3', "data:audio/mp3;base64," + new Buffer(fs.readFileSync('media/rawr.mp3')).toString('base64') ) )
-    .pipe(replace('media/rawr.ogg', "data:audio/ogg;base64," + new Buffer(fs.readFileSync('media/rawr.ogg')).toString('base64') ) )
+    .pipe(replace('makeRaptor.root + \'media/raptor.png', "'data:image/png;base64," + new Buffer(fs.readFileSync('media/raptor.png')).toString('base64') ) )
+    .pipe(replace('makeRaptor.root + \'media/rawr.mp3', "'data:audio/mp3;base64," + new Buffer(fs.readFileSync('media/rawr.mp3')).toString('base64') ) )
+    .pipe(replace('makeRaptor.root + \'media/rawr.ogg', "'data:audio/ogg;base64," + new Buffer(fs.readFileSync('media/rawr.ogg')).toString('base64') ) )
     .pipe(gulp.dest('inline'));
 });
 
